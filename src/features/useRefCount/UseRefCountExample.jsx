@@ -6,7 +6,6 @@ export default function UseRefCountExample() {
   const [renderCount, setRenderCount] = useState(0);
   
   const renderCountRef = useRef(0);
-  renderCountRef.current += 1; // Increment on every render
 
   const logContainerRef = useRef(null);
 
@@ -34,6 +33,7 @@ export default function UseRefCountExample() {
 
   // Run on every commit
   useEffect(() => {
+    renderCountRef.current += 1;
     if (logContainerRef.current) {
       const renderEntry = document.createElement('div');
       renderEntry.className = 'console-entry render';

@@ -57,6 +57,14 @@
   box-shadow: var(--shadow);
 }
 
+.app-shell--wide {
+  width: min(100% - 32px, 1280px);
+}
+
+.feature-panel--wide {
+  padding: 16px;
+}
+
 .example-content {
   display: grid;
   gap: 12px;

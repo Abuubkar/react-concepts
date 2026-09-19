@@ -9,6 +9,7 @@ This workspace is a sandbox for exploring complex React architectures, performan
 *   **Virtual DOM Reconciliation & Diffing**: Inside [`ListKeysExample`](file:///Users/abuubkar/Projects/react%20practice/practice/src/features/listKeys/ListKeysExample.jsx) demonstrating state mismatches during prepending/sorting without key vs with index vs with unique IDs.
 *   **Render Lifecycle & Ref Hazards**: Highlighting pitfalls in [`UseRefCountExample`](file:///Users/abuubkar/Projects/react%20practice/practice/src/features/useRefCount/UseRefCountExample.jsx) where refs are inappropriately read during the render phase.
 *   **Encapsulating Browser API Side Effects**: Custom [`useQueryState`](file:///Users/abuubkar/Projects/react%20practice/practice/src/hooks/useQueryState.js) hook to sync React state with search query parameters and handle standard back/forward navigation.
+*   **Rendering Architecture & Fiber Lifecycle**: [`RenderingVisualizer`](file:///Users/abuubkar/Projects/react%20practice/practice/src/features/renderingVisualizer/RenderingVisualizer.jsx) playground tracing React component tree rendering states, reference-based props/state/context diffs, context rendering isolation, and the 5-stage fiber update execution pipeline.
 
 ---
 

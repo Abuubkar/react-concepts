@@ -16,9 +16,10 @@ export default function App() {
   );
 
   const ActiveComponent = activeFeature?.Component;
+  const isWideFeature = selectedFeature === 'renderingVisualizer';
 
   return (
-    <main className="app-shell">
+    <main className={`app-shell${isWideFeature ? ' app-shell--wide' : ''}`}>
       <header className="app-header">
         <div>
           <p className="app-kicker">React practice lab</p>
@@ -40,7 +41,7 @@ export default function App() {
         </label>
       </header>
 
-      <section className="feature-panel" aria-live="polite">
+      <section className={`feature-panel${isWideFeature ? ' feature-panel--wide' : ''}`} aria-live="polite">
         {ActiveComponent ? <ActiveComponent /> : <p>Select a feature to see the example.</p>}
       </section>
     </main>

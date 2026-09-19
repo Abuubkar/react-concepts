@@ -1,9 +1,15 @@
+import RenderingVisualizer from '../features/renderingVisualizer/RenderingVisualizer';
 import UseDeferredValueExample from '../features/useDeferredValue/UseDeferredValueExample';
 import UseRefCountExample from '../features/useRefCount/UseRefCountExample';
 import { UseActionStateVsUseReducerExample } from '../features/useActionStateVsUseReducer/UseActionStateVsUseReducerExample';
 import ListKeysExample from '../features/listKeys/ListKeysExample';
 
 export const featureList = [
+  {
+    id: 'renderingVisualizer',
+    label: 'Rendering Architecture Visualizer',
+    Component: RenderingVisualizer
+  },
   { 
     id: 'deferred', 
     label: 'useDeferredValue example', 
@@ -27,3 +33,4 @@ export const featureList = [
 ];
 
 export const defaultFeatureId = featureList[0].id;
+
