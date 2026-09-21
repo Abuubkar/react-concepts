@@ -21,16 +21,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: pnpm/action-setup@v6
+      # Installs pnpm, Node, and runs `pnpm install` in one step.
+      # require-lockfile: fail if pnpm-lock.yaml is missing, and install with
+      # --frozen-lockfile so CI can never silently resolve a different tree.
+      - uses: pnpm/setup@v3
         with:
           version: 11
+          runtime: node@24
+          cache: true
+          require-lockfile: true
 
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: pnpm
-
-      - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
       - uses: actions/configure-pages@v6
