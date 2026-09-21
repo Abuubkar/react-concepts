@@ -1,6 +1,10 @@
 # React Senior-Level Interview Prep Lab
 
+**[▶ Live demo](https://abuubkar.github.io/react-concepts/)** — every example below runs in the browser, no setup required.
+
 This workspace is a sandbox for exploring complex React architectures, performance optimization patterns, and React 19 concepts relevant to senior-level engineering (6+ years experience).
+
+[![React feature examples — live demo](docs/screenshot.png)](https://abuubkar.github.io/react-concepts/)
 
 ## Currently Implemented Topics
 
